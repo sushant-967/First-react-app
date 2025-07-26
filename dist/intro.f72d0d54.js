@@ -680,40 +680,104 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-    className: "title",
+const x = 25;
+function Heading() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "you are great"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 5,
+        columnNumber: 12
+    }, this);
+}
+_c = Heading;
+const AnotherFunctionComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Testing another function component, nested bhai"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+_c1 = AnotherFunctionComponent;
+const ReactFunctionComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "i am a react function componenet"
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 12,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AnotherFunctionComponent, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 13,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "I am also there"
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 15,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined);
+_c2 = ReactFunctionComponent;
+const elem = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+    children: " i am react element"
+}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 19,
+    columnNumber: 12
+}, undefined);
+const nestedheading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
     children: [
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Hi Sushant"
+            children: "you are doing well sushant"
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 5,
-            columnNumber: 21
+            lineNumber: 22,
+            columnNumber: 9
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: " how are you"
-        }, void 0, false, {
+            children: [
+                "My age is : ",
+                x
+            ]
+        }, void 0, true, {
             fileName: "app.js",
-            lineNumber: 6,
-            columnNumber: 21
+            lineNumber: 23,
+            columnNumber: 9
         }, undefined),
-        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-            children: "I am fine "
-        }, void 0, false, {
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 7,
-            columnNumber: 21
+            lineNumber: 24,
+            columnNumber: 9
+        }, undefined),
+        elem,
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ReactFunctionComponent, {}, void 0, false, {
+            fileName: "app.js",
+            lineNumber: 26,
+            columnNumber: 10
         }, undefined)
     ]
 }, void 0, true, {
     fileName: "app.js",
-    lineNumber: 4,
-    columnNumber: 18
+    lineNumber: 21,
+    columnNumber: 9
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
-root.render(heading); // const heading=<h1>Now you have written JSX</h1>;
+root.render(nestedheading); // const heading=<h1>Now you have written JSX</h1>;
  // const root=ReactDOM.createRoot(document.getElementById('root'));
  // root.render(heading);
+var _c, _c1, _c2;
+$RefreshReg$(_c, "Heading");
+$RefreshReg$(_c1, "AnotherFunctionComponent");
+$RefreshReg$(_c2, "ReactFunctionComponent");
 
   $parcel$ReactRefreshHelpers$5fe5.postlude(module);
 } finally {
